@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SA Galeri</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- Üst gezinme çubuğu -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <img class="navbar-brand" src="https://i.hizliresim.com/czd9gsv.png" alt="Logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">Anasayfa</a></li>
+                
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="kurumsalDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kurumsal</a>
+                    <ul class="dropdown-menu" aria-labelledby="kurumsalDropdown">
+                        <li><a class="dropdown-item" href="#">Hakkımızda</a></li>
+                        <li><a class="dropdown-item" href="#">Misyonumuz</a></li>
+                        <li><a class="dropdown-item" href="#">Vizyonumuz</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="#">Satılık Araç İlanları</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Kiralık Araç İlanları</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Projelerimiz</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">İletişim</a></li>
+            </ul>
+            <div class="ms-auto">
+                <button class="btn btn-success me-2">Üye Ol</button>
+                <button class="btn btn-warning">Giriş Yap</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- afiş kısmı -->
+    <img class="banner" src="https://i.hizliresim.com/2xitd5h.png" alt="Galery Banner">
+
+    <!-- Arama bölümü -->
+    <div class="container my-4">
+        <h4 class="mb-3" style="text-align: center; font-weight: bold;">İlan Arama</h4>
+        <div class="search-section">
+            <div class="row">
+                <div class="col-md-4">
+                    <label class="input-label">İlan No veya Kelime</label>
+                    <input type="text" class="form-control" placeholder="İlan No veya Kelime">
+                </div>
+                <div class="col-md-3">
+                    <label class="input-label">Kategori Seçiniz</label>
+                    <select class="form-control">
+                        <option>---Kategori Seçiniz---</option>
+                        <option>Otomobil</option>
+                        <option>Motosiklet</option>
+                        <option>Ticari Araçlar</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="input-label">Alt Kategori Seçiniz</label>
+                    <select class="form-control">
+                        <option>---Alt Kategori Seçiniz---</option>
+                        <option>Satılık Araçlar</option>
+                        <option>Kiralık Araçlar</option>
+                    </select>
+                </div>
+                <div class="col-md-2 ilanara">
+                    <button class="btn btn-success w-100">İlan Ara</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- İçerik Kısmı -->
+    <h4 class="mb-3" style="text-align: center; font-weight: bold;">Vitrin İlanları</h5>
+    <div class="container my-4">
+        <div class="row">
+            <!-- Yanbar: Kategoriler -->
+            <div class="col-md-3">
+                <div class="sidebar">
+                    <ul class="list-group">
+                        <li class="list-group-item bg-success text-white"><b>Kategoriler</b></li>
+                        <li class="list-group-item">Otomobil İlanları</li>
+                        <li class="list-group-item">Motosiklet İlanları</li>
+                    </ul>
+                    <ul class="list-group">
+                        <li class="list-group-item bg-success text-white"><b>Alt Kategoriler</b></li>
+                        <li class="list-group-item">Arazi, Suv & Pickup İlanları</li>
+                        <li class="list-group-item">Ticari Araç İlanları</li>
+                        <li class="list-group-item">Kiralık Araç İlanları</li>
+                    </ul>
+                    <ul class="list-group">
+                        <li class="list-group-item bg-success text-white"><b>Şehirler</b></li>
+                        <li class="list-group-item">İstanbul</li>
+                        <li class="list-group-item">Ankara</li>
+                        <li class="list-group-item">İzmir</li>
+                        <li class="list-group-item">Bursa</li>
+                        <li class="list-group-item">Adana</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Vitrin İlanları -->
+            <div class="col-md-9">
+                <div class="row vitrin-ilanlari">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://i.hizliresim.com/oydshfg.png" alt="[Resim Alanı: 300x200]">
+                            <div class="card-body">
+                                <h5 class="card-title">Çıtır Hasarlı MJET</h5>
+                                <p class="card-tag-text">#552434</p>
+                                <p class="card-bottom-text">450,000 TL</p>
+                            </div>
+                            <div>
+                                <center> 
+                           <a href="ilanlar/posts.html">     <input type="button " class="btn btn-success" value="Detaylı İncelemek için Tıklayınız"></a>
+</center>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://i.hizliresim.com/r1ytagk.png" alt="[Resim Alanı: 300x200]">
+                            <div class="card-body">
+                                <h5 class="card-title">Araç Emir Beye Opsiyonlanmıştır</h5>
+                                <p class="card-tag-text">#226367</p>
+                                <p class="card-bottom-text">OPSİYONLANDI</p>
+                            </div>
+                            <div>
+                                <center> 
+                           <a href="ilanlar/post1.html">     <input type="button " class="btn btn-success" value="Detaylı İncelemek için Tıklayınız"></a>
+</center>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://i.hizliresim.com/pjcm5tu.png" alt="[Resim Alanı: 300x200]">
+                            <div class="card-body">
+                                <h5 class="card-title">Toyota Sağlamlığı Der Susarız</h5>
+                                <p class="card-tag-text">#324657</p>
+                                <p class="card-bottom-text">1,800,000 TL</p>
+                            </div>
+                            <div>
+                                <center> 
+                           <a href="ilanlar/post2.html">     <input type="button " class="btn btn-success" value="Detaylı İncelemek için Tıklayınız"></a>
+</center>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- buranın aşağısındaki ilanların resimleri ve açıklamaları değiştirilecek -->
+
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://i.hizliresim.com/cgp4eb8.png" alt="[Resim Alanı: 300x200]">
+                            <div class="card-body">
+                                <h5 class="card-title">Fazlasıyla Çekici</h5>
+                                <p class="card-tag-text">#467813</p>
+                                <p class="card-bottom-text">1,550,000 TL</p>
+                            </div>
+                            <div>
+                                <center> 
+                           <a href="ilanlar/post3.html">     <input type="button " class="btn btn-success" value="Detaylı İncelemek için Tıklayınız"></a>
+</center>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://i.hizliresim.com/ku1m76a.png" alt="[Resim Alanı: 300x200]">
+                            <div class="card-body">
+                                <h5 class="card-title">Gözümün Nuru Yoldaş Satılıktır</h5>
+                                <p class="card-tag-text">#226367</p>
+                                <p class="card-bottom-text">2,530,000 TL</p>
+                            </div>
+                            <div>
+                                <center> 
+                           <a href="ilanlar/post4.html">     <input type="button " class="btn btn-success" value="Detaylı İncelemek için Tıklayınız"></a>
+</center>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://i.hizliresim.com/ecmwolf.png" alt="[Resim Alanı: 300x200]">
+                            <div class="card-body">
+                                <h5 class="card-title">SATILIK Lüks Artvin</h5>
+                                <p class="card-tag-text">#545681</p>
+                                <p class="card-bottom-text">2,000,000 TL</p>
+                            </div>
+                            <div>
+                                <center> 
+                           <a href="ilanlar/post5.html">     <input type="button " class="btn btn-success" value="Detaylı İncelemek için Tıklayınız"></a>
+</center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="all-listings-button">
+                    <button class="btn btn-success w-100"><b>Tüm İlanlar İçin Tıklayınız</b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- Hakkımda kısmı -->
+    <div class="footer">
+        <div class="footer-row">
+            <div class="col-md-4 footer-div">
+                <h5>Hakkımızda</h5>
+                <img class="footer-brand" src="https://i.hizliresim.com/czd9gsv.png" alt="Logo">
+                <!-- Hakkımda kısmını büyütüp kalınlaştırıcaz -->
+                <p style="font-size: 18px;">SA Galeri, otomobil tutkunlarının güvenle buluştuğu yeni nesil bir platformdur. 2024 yılının sonlarında kurulan web sitemiz, galericilik sektöründeki 3 prestijli ödüle ev sahipliği yapan uzman bir geçmişin üzerine inşa edilmiştir.<br> Yeni bir oluşum olmamıza rağmen, deneyimimiz ve müşterilerimizin güveniyle yolumuza sağlam adımlarla devam ediyoruz. Araç alım-satımını kolay, hızlı ve güvenilir hale getirmek için buradayız.</p>
+                <!-- Yeni bir oluşum kısmından itibaren 2 paragrafa çekilcek. Yazı bir tık küçültülüp Hakkında yazısını ön plana çekilecek. -->
+            </div>
+            <div class="col-md-4 footer-div">
+                <div>
+                    <h3>Menü</h3>
+                    <ul class="menu-ul">
+                        <li><a href="#">Otomobil</a></li>
+                        <li><a href="#">Motosiklet</a></li>
+                        <li><a href="#">Ticari Araçlar</a></li>
+                        <li><a href="#">Satılık Araçlar</a></li>
+                        <li><a href="#">Kiralık Araçlar</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 footer-div">
+                <h3>İletişim</h3>
+                <h5>Emlak İlanları</h5>
+                <p><b>Adres:</b> Postane, Eflatun Sk. No:8, 34940 Tuzla/İstanbul </p>
+                <p><b>Tel:</b>0(536) 556 78 13</p>
+                <p><b>Email:</b>info@sagaleri.com</p>
+            </div>
+        </div>
+    </div>
+    <footer class="copyfooter" style="background-color: rgb(33, 35, 42); height: 26px;">
+        <center>
+         <p style=" color: white; bottom: 0px;">Copyright © 2024 Tüm Hakları Saklıdır</p>
+        </center>
+    </footer>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İlan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <style>
+        .property-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .property-image img {
+            width: 70%;
+            height: auto;
+        }
+        .gallery img {
+            height: 60px;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+        .description {
+            margin-top: 20px;
+        }
+        .sidebar {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .price {
+            font-size: 1.8rem;
+            color: #28a745;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Üst gezinme çubuğu -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <img class="navbar-brand" src="https://i.hizliresim.com/czd9gsv.png" alt="Logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Anasayfa</a></li>
+                
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="kurumsalDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kurumsal</a>
+                    <ul class="dropdown-menu" aria-labelledby="kurumsalDropdown">
+                        <li><a class="dropdown-item" href="#">Hakkımızda</a></li>
+                        <li><a class="dropdown-item" href="#">Misyonumuz</a></li>
+                        <li><a class="dropdown-item" href="#">Vizyonumuz</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="#">Satılık Araç İlanları</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Kiralık Araç İlanları</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Projelerimiz</a></li>
+                <li class="nav-item"><a class="nav-link" href="../contact.html">İletişim</a></li>
+            </ul>
+            <div class="ms-auto">
+                <button class="btn btn-success me-2">Üye Ol</button>
+                <button class="btn btn-warning">Giriş Yap</button>
+            </div>
+        </div>
+    </nav>
+    <!--Üst gezinme çubuğu bitiş-->
+
+    <!-- İçerik -->
+    <div class="container">
+        <div class="row">
+            <!-- Ana En Üst Bilgilendirme -->
+            <div class="col-lg-8">
+                <div class="property-section mt-4 p-3" style="background-color: #f8f9fa; border: 1px solid #ddd; border-radius: 8px;">
+                    <!-- Başlık ve Konum -->
+                    <div class="property-title mb-3" style="font-size: 1.5rem; font-weight: bold;">Toyota Sağlamlığı Der Susarız</div>
+                    <div class="property-location text-muted mb-3" style="font-size: 1rem;">Esenyalı Mahallesi, Pendik, Istanbul</div>
+                    <hr>
+    
+                    <!-- Büyük Görsel -->
+                    <div class="property-image text-center mb-3">
+                        <img src="../Adsız tasarım (16).png" alt="Property Image" style="max-width: 100%; border-radius: 8px;">
+                    </div>
+    
+                    <!-- Alt Görseller Galerisi -->
+                    <div class="gallery d-flex justify-content-between mt-3" style="gap: 10px;">
+                        <img src="../Adsız tasarım (16).png" alt="Gallery Image" style="width: 18%; border-radius: 4px;">
+                        <img src="../Adsız tasarım (16).png" alt="Gallery Image" style="width: 18%; border-radius: 4px;">
+                        <img src="../Adsız tasarım (16).png" alt="Gallery Image" style="width: 18%; border-radius: 4px;">
+                        <img src="../Adsız tasarım (16).png" alt="Gallery Image" style="width: 18%; border-radius: 4px;">
+                        <img src="../Adsız tasarım (16).png" alt="Gallery Image" style="width: 18%; border-radius: 4px;">
+                    </div>
+                </div>
+    
+                <!-- İlan Açıklaması -->
+                <div class="description mt-4 p-3" style="background-color: #f8f9fa; border: 1px solid #ddd; border-radius: 8px;">
+                    <h5 style="font-weight: bold; margin-bottom: 15px;">Açıklama</h5>
+                    <p>2019 model sınıfının en fullüdür.</p>
+                    <ul>
+                        <li>Değişen yok</li>
+                        <li>Boya yok</li>
+                        <li>Tramer yok</li>
+                        <li>Tüm parçalar orjinaldir.</li>
+                    </ul>
+                    <p>Vize Eylül 2027'e kadar geçerli.</p>
+                    <ul>
+                        <li>Fabrika çıkışlı xenon farlar bulunmaktadır</li>
+                        <li>Geri görüş kamerası</li>
+                        <li>Yokuş kalkış desteği</li>
+                        <li>4 cam elektrikli otomatik aynalar</li>
+                        <li>Ön ve arka sis farları</li>
+                    </ul>
+                    <p>Yağını koymasanız bile gider.</p>
+                    <ul>
+                        <li>Camlar film takılı</li>
+                        <li>Yedek anahtarı ve kitaplığı mevcut.</li>
+                        <li>Bagaj içi kauçuk</li>
+                        <li>Koltuklarda herhangi bir deforma yoktur.</li>
+                    </ul>
+                    <p>Periyodik bakımları yeni yapıldı. Pazarlık payı vardır.</p>
+                </div>
+            </div>
+    
+            <!-- Yan Bilgilendirme -->
+            <div class="col-lg-4">
+                <div class="sidebar mt-4">
+                    <!-- Fiyat -->
+                    <div class="price bg-warning text-dark p-3 text-center" style="font-size: 1.5rem; border-radius: 8px;">1,800,000 TL</div>
+                    <br>
+    
+                    <!-- Satıcı Bilgileri -->
+                    <div class="seller-info p-3" style="background-color: #f8f9fa; border: 1px solid #ddd; border-radius: 8px;">
+                        <h5 style="font-weight: bold;">Satıcı Bilgileri</h5>
+                        <hr>
+                        <p><strong>Adı:</strong> Samet</p>
+                        <p><strong>Telefon:</strong> 0534 000 3636</p>
+                        <p><strong>E-Mail:</strong> sametrdgn@gmail.com</p>
+                        <hr>
+                    </div>
+    
+                    <!-- İlan Bilgileri -->
+                    <div class="ad-info p-3" style="background-color: #f8f9fa; border: 1px solid #ddd; border-radius: 8px;">
+                        <h5 style="font-weight: bold;">İlan Bilgileri</h5>
+                        <hr>
+                        <table class="table table-bordered">
+                            <tr>
+                                <th>İlan No:</th>
+                                <td>#324657</td>
+                            </tr>
+                            <tr>
+                                <th>Marka:</th>
+                                <td>Toyota</td>
+                            </tr>
+                            <tr>
+                                <th>Model:</th>
+                                <td>C-HR Hybrid</td>
+                            </tr>
+                            <tr>
+                                <th>Model Yılı</th>
+                                <td>2019</td>
+                            </tr>
+                            <tr>
+                                <th>Araç Km:</th>
+                                <td>50.000</td>
+                            </tr>
+                            <tr>
+                                <th>Araç Durumu:</th>
+                                <td>İkinci El</td>
+                            </tr>
+                            <tr>
+                                <th>Araç Motor Hacmi :</th>
+                                <td>1798cc</td>
+                            </tr>
+                            <tr>
+                                <th>Araç Beygir:</th>
+                                <td>122HP</td>
+                            </tr>
+                            <tr>
+                                <th>Krediye Uygun:</th>
+                                <td>Hayır</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   
+
+     <!--Footer Eklenecek-->
+     <footer class="copyfooter" style="background-color: rgb(33, 35, 42); height: 26px;">
+        <center>
+         <p style=" color: white; bottom: 0px;">Copyright © 2024 Tüm Hakları Saklıdır</p>
+        </center>
+    </footer>  
+</body>
+</html>

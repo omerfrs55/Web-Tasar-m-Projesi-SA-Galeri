@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #000;
+    margin: 0px 18px 16px;
+}
+
+.navbar {
+    display: flex;
+    gap: 70px;
+    padding: 12px 48px;
+    background-color: #1a1919;
+}
+
+.navbar-brand {
+    width: 6%;
+    height: auto;
+}
+
+.navbar-nav {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+.input-label {
+    font-weight: bold;
+    margin: 4px;
+    font-size: 18px;
+}
+
+.ilanara {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.search-section {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.sidebar h5 {
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    background-color: #ccc;
+}
+
+.card {
+    margin-bottom: 20px;
+    height: 350px;
+}
+
+.card-body{
+    position: relative;
+}
+
+.card-bottom-text{
+    position: absolute;
+    bottom: 2px;
+    left: 20px
+}
+
+.card-tag-text{
+    position: absolute;
+    bottom: 2px;
+    right: 20px;
+    font-weight: bold;
+}
+
+.vitrin-ilanlari .all-listings-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.vitrin-ilanlari .all-listings-button .btn {
+    background-color: #28a745;
+    color: white;
+    text-transform: uppercasea;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.footer-row {
+    display: flex;
+}
+
+.footer-row div {
+    margin: 12px 18px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-brand {
+    width: 40%;
+}
+
+.menu-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.menu-ul li {
+    padding: 15px 10px;
+    font-weight: bold;
+    background-color: #434343;
+    border-radius: 4px;
+}
+
+.menu-ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: #535353;
+}
+/* Mesaj yazdırma divi cssi*/ 
+#responseText {
+    width: 100%;
+    display: block;
+    box-sizing: border-box; /* İçerik ve padding'in toplam genişliği hesaba katılsın */
+    margin: 20px 0;
+}
